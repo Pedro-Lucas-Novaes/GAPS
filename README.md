@@ -4,7 +4,7 @@
     title Desenvolvimento de Software
 
     %%%Definir o formato data (Ano-Mês-Dia)
-    dataFormat YYYY-MM-DD
+    dateFormat YYYY-MM-DD
 
     %%%Criação do agrupamento visual para as tarefas iniciais
     section Planejamento
@@ -13,6 +13,6 @@
     Requisitos :done, req, 2026-03-11, 10d
 
     %%%'active' Tarefa em andamento
-    Desing :active, des, 2026-03-20, 15d
+    Design :active, des, 2026-03-20, 15d
 
 ```
