@@ -23,4 +23,8 @@
     %%%'after dev': Realiza a tarefa quando a tarefa dev terminar
     Teste   :teste, after dev, 15d
 
+    section Lançamento
+    Implantação: dep, after test, 5d
+    Treinamento: tra, after dep, 10d
+
 ```
