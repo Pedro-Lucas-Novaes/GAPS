@@ -15,4 +15,12 @@
     %%%'active' Tarefa em andamento
     Design :active, des, 2026-03-20, 15d
 
+    %%%Criação do segundo bolco
+    section Desenvolvimento
+
+    %%%'crit' Define como tarefa critica (cor vermelha ou destaque)
+    Codificacao :crit, dev, 2026-03-25, 300
+    %%%'after dev': Realiza a tarefa quando a tarefa dev terminar
+    Teste   :teste, after dev, 15d
+
 ```
