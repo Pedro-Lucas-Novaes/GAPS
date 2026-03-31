@@ -1,29 +1,24 @@
 ```mermaid
-gantt
-    title Cronograma do Projeto - TechConnect Solutions
-    dateFormat YYYY-MM-DD
+graph TD
+    A[Projeto TechConnect] --> B[Comunicacao]
+    A --> C[Complexidade Tecnica]
+    A --> D[Riscos]
+    A --> E[Entrega Incremental]
 
-    section Planejamento
-    Levantamento de Requisitos :a1, 2026-01-01, 10d
-    Documentacao Funcional :a2, after a1, 10d
+    B --> B1[Reunioes diarias rapidas]
+    B --> B2[Equipe pequena favorece comunicacao]
 
-    section Design
-    Prototipos de Interface :a3, after a2, 10d
-    Layout Final :a4, after a3, 10d
+    C --> C1[Integracao com banco de dados]
+    C --> C2[Upload de imagens]
+    C --> C3[Geracao de relatorios]
 
-    section Desenvolvimento
-    Configuracao do Ambiente :a5, after a4, 5d
-    Criacao do Banco de Dados :a6, after a5, 5d
-    Modulo de Login :a7, after a6, 15d
-    CRUD de Empresas :a8, after a7, 20d
-    Upload de Logotipo :a9, after a8, 10d
-    Relatorios PDF Excel :a10, after a9, 10d
-    Painel Administrativo :a11, after a10, 15d
+    D --> D1[Atraso no cronograma]
+    D --> D2[Erros de autenticacao]
+    D --> D3[Falhas de seguranca]
 
-    section Testes
-    Testes Unitarios e Integracao :a12, after a11, 10d
-    Testes de Usabilidade :a13, after a12, 10d
-
-    section Entrega
-    Implantacao Final :a14, after a13, 5d
+    E --> E1[Entrega 1 Login]
+    E --> E2[Entrega 2 CRUD]
+    E --> E3[Entrega 3 Upload]
+    E --> E4[Entrega 4 Relatorios]
+    E --> E5[Entrega 5 Painel Admin]
 ```
