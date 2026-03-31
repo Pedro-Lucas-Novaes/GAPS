@@ -1,6 +1,6 @@
 gantt
     title Cronograma do Projeto - TechConnect Solutions
-    dateFormat  YYYY-MM-DD
+    dateFormat YYYY-MM-DD
 
     section Planejamento
     Levantamento de Requisitos        :a1, 2026-01-01, 10d
