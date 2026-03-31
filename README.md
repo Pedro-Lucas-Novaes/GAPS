@@ -1,30 +1,26 @@
-```mermaid
-    gantt
-    %%%Definir titulo principal
-    title Desenvolvimento de Software
-
-    %%%Definir o formato data (Ano-Mês-Dia)
-    dateFormat YYYY-MM-DD
-
-    %%%Criação do agrupamento visual para as tarefas iniciais
+gantt
+    title Cronograma do Projeto - TechConnect Solutions
+    dateFormat  YYYY-MM-DD
     section Planejamento
-    %%%'done': Tarefa concluida(fica cinza). 'req' é o ID da
-    %%%tarefa - 2026-03-11 'data de inicio' 10 d - 'duracao'
-    Requisitos :done, req, 2026-03-11, 10d
+    Levantamento de Requisitos        :a1, 2026-01-01, 10d
+    Documentação Funcional            :a2, after a1, 10d
 
-    %%%'active' Tarefa em andamento
-    Design :active, des, 2026-03-20, 15d
+    section Design
+    Protótipos de Interface           :a3, after a2, 10d
+    Layout Final                      :a4, after a3, 10d
 
-    %%%Criação do segundo bolco
     section Desenvolvimento
+    Configuração do Ambiente          :a5, after a4, 5d
+    Criação do Banco de Dados         :a6, after a5, 5d
+    Módulo de Login                   :a7, after a6, 15d
+    CRUD de Empresas                  :a8, after a7, 20d
+    Upload de Logotipo                :a9, after a8, 10d
+    Relatórios (PDF/Excel)            :a10, after a9, 10d
+    Painel Administrativo             :a11, after a10, 15d
 
-    %%%'crit' Define como tarefa critica (cor vermelha ou destaque)
-    Codificacao :crit, dev, 2026-03-25, 300
-    %%%'after dev': Realiza a tarefa quando a tarefa dev terminar
-    Teste   :teste, after dev, 15d
+    section Testes
+    Testes Unitários e Integração     :a12, after a11, 10d
+    Testes de Usabilidade             :a13, after a12, 10d
 
-    section Lançamento
-    Implantação: dep, after test, 5d
-    Treinamento: tra, after dep, 10d
-
-```
+    section Entrega
+    Implantação Final                 :a14, after a13, 5d
